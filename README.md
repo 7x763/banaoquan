@@ -6,10 +6,10 @@
 
  Hướng Dẫn Import CSDL vào MySQL Workbench
 
-Để đưa dữ liệu từ file `.sql` vào MySQL, bạn làm theo các bước sau:
+Để đưa dữ liệu từ file `.sql` vào MySQL, làm theo các bước sau:
 
 1.  Mở **MySQL Workbench**.
-2.  Kết nối vào Local Instance của bạn (thường là `localhost`).
+2.  Kết nối vào Local Instance  (thường là `localhost`).
 3.  Tạo một Schema (Cơ sở dữ liệu) mới:
     *   Nhấp vào biểu tượng **Create a new schema in the connected server** trên thanh công cụ.
     *   Nhập tên là: `duan1_quanao`.
@@ -42,7 +42,7 @@ php -v
 ```
 
 **Bước 2: Khởi động server**
-Lệnh này sẽ chạy server tại cổng 8000. Bạn có thể thay đổi số cổng nếu muốn.
+Lệnh này sẽ chạy server tại cổng 8000. thay đổi số cổng nếu muốn.
 ```powershell
 php -S localhost:8000
 ```
