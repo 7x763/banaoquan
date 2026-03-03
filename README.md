@@ -1,9 +1,6 @@
-# Hướng Dẫn Cài Đặt và Chạy Dự Án (Dự Án 1 - Quần Áo)
+# Hướng Dẫn Cài Đặt và Chạy Dự Án 
 
-Dự án này là một trang web bán quần áo được phát triển bằng PHP và MySQL. Dưới đây là hướng dẫn chi tiết để bạn có thể cài đặt và chạy dự án này trên môi trường local.
 
-## 1. Yêu Cầu Hệ Thống
-*   **XAMPP** hoặc **WAMP** (Chương trình tạo môi trường server giả lập có hỗ trợ PHP và MySQL).
 *   **MySQL Workbench** (Hoặc phpMyAdmin) để quản lý cơ sở dữ liệu.
 *   Trình duyệt web (Chrome, Edge, Firefox, etc.).
 
@@ -44,9 +41,6 @@ $password = 'root'; // Thay đổi nếu password MySQL của bạn khác
 3.  Mở trình duyệt web và truy cập theo đường dẫn:
     `http://localhost/DUAN1_QUANAO/DUAN1_QUANAO/`
 
-## 5. Tài Khoản Đăng Nhập (Mặc định)
-*   **Admin**: `admin` / (Vui lòng kiểm tra lại mật khẩu hoặc reset nếu cần trong bảng `users`)
-*   **Khách hàng**: `khoanguyen`
 
----
-Chúc bạn thực hiện thành công!
+
+
