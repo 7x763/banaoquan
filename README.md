@@ -32,20 +32,36 @@ $username = 'root'; // Thay đổi nếu username MySQL của bạn khác
 $password = 'root'; // Thay đổi nếu password MySQL của bạn khác
 ```
 
- Cách Chạy 
+## 4. Các Lệnh PHP Để Chạy Dự Án
 
-Bạn có thể chạy dự án trực tiếp bằng PHP Built-in Server (có sẵn khi cài PHP):
+Mở Terminal (PowerShell hoặc CMD) tại thư mục `DUAN1_QUANAO\DUAN1_QUANAO` và chạy các lệnh sau:
 
-1.  Mở Terminal hoặc Command Prompt tại thư mục của dự án (`DUAN1_QUANAO/DUAN1_QUANAO`).
-2.  Đảm bảo bạn đã cài đặt PHP và đã thêm vào biến môi trường (Environment Variables). Kiểm tra bằng lệnh: `php -v`.
-3.  Chạy lệnh sau để khởi động server:
-    ```bash
-    php -S localhost:8000
-    ```
-4.  Mở trình duyệt web và truy cập theo đường dẫn:
-    `http://localhost:8000`
+**Bước 1: Kiểm tra PHP đã được cài đặt chưa**
+```powershell
+php -v
+```
 
-**Lưu ý:** Bạn vẫn cần một dịch vụ MySQL đang chạy (có thể cài đặt MySQL độc lập hoặc dùng Laragon) để cơ sở dữ liệu hoạt động.
+**Bước 2: Khởi động server**
+Lệnh này sẽ chạy server tại cổng 8000. Bạn có thể thay đổi số cổng nếu muốn.
+```powershell
+php -S localhost:8000
+```
+
+**Lệnh nâng cao (Nếu muốn chạy cổng khác):**
+```powershell
+php -S localhost:8080
+```
+
+**Bước 3: Truy cập web**
+Sau khi chạy lệnh trên, đừng tắt cửa sổ Terminal. Hãy mở trình duyệt và nhập:
+`http://localhost:8000`
+
+---
+
+**Để dừng Server:** Nhấn `Ctrl + C` trong cửa sổ Terminal.
+
+**Lưu ý quan trọng:** Bạn phải đảm bảo MySQL đang chạy (thông qua dịch vụ Windows hoặc công cụ quản lý DB khác) để website không bị lỗi kết nối Database.
+
 
 
 
