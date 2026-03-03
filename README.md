@@ -32,7 +32,7 @@ $username = 'root'; // Thay đổi nếu username MySQL của bạn khác
 $password = 'root'; // Thay đổi nếu password MySQL của bạn khác
 ```
 
-## 4. Cách Chạy Dự Án (Không cần XAMPP)
+ Cách Chạy 
 
 Bạn có thể chạy dự án trực tiếp bằng PHP Built-in Server (có sẵn khi cài PHP):
 
