@@ -2,7 +2,7 @@
 
 
 *   **MySQL Workbench**  để quản lý cơ sở dữ liệu.
-*   Trình duyệt web (Chrome, Edge, Firefox, etc.).
+*   Trình duyệt web 
 
  Hướng Dẫn Import CSDL vào MySQL Workbench
 
