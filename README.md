@@ -1,7 +1,7 @@
 # Hướng Dẫn Cài Đặt và Chạy Dự Án 
 
 
-*   **MySQL Workbench** (Hoặc phpMyAdmin) để quản lý cơ sở dữ liệu.
+*   **MySQL Workbench**  để quản lý cơ sở dữ liệu.
 *   Trình duyệt web (Chrome, Edge, Firefox, etc.).
 
  Hướng Dẫn Import CSDL vào MySQL Workbench
@@ -32,7 +32,7 @@ $username = 'root'; // Thay đổi nếu username MySQL của bạn khác
 $password = 'root'; // Thay đổi nếu password MySQL của bạn khác
 ```
 
-## 4. Các Lệnh PHP Để Chạy Dự Án
+ Các Lệnh PHP Để Chạy Dự Án
 
 Mở Terminal (PowerShell hoặc CMD) tại thư mục `DUAN1_QUANAO\DUAN1_QUANAO` và chạy các lệnh sau:
 
@@ -58,9 +58,9 @@ Sau khi chạy lệnh trên, đừng tắt cửa sổ Terminal. Hãy mở trình
 
 ---
 
-**Để dừng Server:** Nhấn `Ctrl + C` trong cửa sổ Terminal.
+Để dừng Server:** Nhấn `Ctrl + C` trong cửa sổ Terminal.
 
-**Lưu ý quan trọng:** Bạn phải đảm bảo MySQL đang chạy (thông qua dịch vụ Windows hoặc công cụ quản lý DB khác) để website không bị lỗi kết nối Database.
+
 
 
 
