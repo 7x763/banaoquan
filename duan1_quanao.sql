@@ -1,15 +1,12 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Oct 10, 2024 at 03:56 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
+
+CREATE DATABASE IF NOT EXISTS `duan1_quanao`;
+USE `duan1_quanao`;
+SET NAMES utf8mb4;
+
+DROP TABLE IF EXISTS `address`;
 
 
 
@@ -27,6 +24,8 @@ INSERT INTO `address` (`id`, `user_id`, `address`) VALUES
 
 
 
+
+DROP TABLE IF EXISTS `banners`;
 CREATE TABLE `banners` (
   `id` int(11) NOT NULL,
   `image` varchar(255) NOT NULL,
@@ -36,6 +35,8 @@ CREATE TABLE `banners` (
 
 
 
+
+DROP TABLE IF EXISTS `carts`;
 CREATE TABLE `carts` (
   `cart_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
@@ -60,6 +61,8 @@ INSERT INTO `carts` (`cart_id`, `product_id`, `user_id`, `product_name`, `produc
 
 
 
+
+DROP TABLE IF EXISTS `categories`;
 CREATE TABLE `categories` (
   `category_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -79,6 +82,8 @@ INSERT INTO `categories` (`category_id`, `name`, `image`, `status`) VALUES
 (19, 'Áo thun', 'quanao10.png', 1);
 
 
+
+DROP TABLE IF EXISTS `comments`;
 CREATE TABLE `comments` (
   `comment_id` int(11) NOT NULL,
   `content` text NOT NULL,
@@ -101,6 +106,8 @@ INSERT INTO `comments` (`comment_id`, `content`, `date`, `status`, `user_id`, `p
 (12, 'mUA CODE ỦNG HỘ NHA HIHI', '2024-09-05 21:06:58', 1, 6, 32);
 
 
+
+DROP TABLE IF EXISTS `orderdetails`;
 CREATE TABLE `orderdetails` (
   `orderdetails_id` int(11) NOT NULL,
   `order_id` int(11) NOT NULL,
@@ -203,6 +210,8 @@ INSERT INTO `orderdetails` (`orderdetails_id`, `order_id`, `product_id`, `quanti
 
 
 
+
+DROP TABLE IF EXISTS `orders`;
 CREATE TABLE `orders` (
   `order_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
@@ -266,6 +275,8 @@ INSERT INTO `orders` (`order_id`, `user_id`, `date`, `total`, `address`, `phone`
 
 
 
+
+DROP TABLE IF EXISTS `posts`;
 CREATE TABLE `posts` (
   `post_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
@@ -288,6 +299,8 @@ INSERT INTO `posts` (`post_id`, `category_id`, `title`, `image`, `author`, `cont
 
 
 
+
+DROP TABLE IF EXISTS `post_categories`;
 CREATE TABLE `post_categories` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL
@@ -303,6 +316,8 @@ INSERT INTO `post_categories` (`id`, `name`) VALUES
 
 
 
+
+DROP TABLE IF EXISTS `products`;
 CREATE TABLE `products` (
   `product_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
@@ -345,6 +360,8 @@ INSERT INTO `products` (`product_id`, `category_id`, `name`, `image`, `quantity`
 (34, 4, 'Nguyễn Lê Anh Khoa', 'ExampleFile.pdf', 5, 0, 123555, 55, '2024-03-31 22:24:56', 2, '', '', 0);
 
 
+
+DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
   `username` varchar(100) NOT NULL COMMENT 'Tên đăng nhập',
@@ -373,6 +390,8 @@ INSERT INTO `users` (`user_id`, `username`, `password`, `full_name`, `image`, `e
 
 
 
+
+DROP TABLE IF EXISTS `warehouse`;
 CREATE TABLE `warehouse` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -587,7 +606,3 @@ ALTER TABLE `posts`
 ALTER TABLE `products`
   ADD CONSTRAINT `fk_category` FOREIGN KEY (`category_id`) REFERENCES `categories` (`category_id`);
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

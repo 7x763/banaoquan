@@ -9,6 +9,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shop quần áo - Thời trang</title>
 
+    <!-- Tự động sửa lỗi 404 CSS/JS -->
+    <?php
+        $script_name = $_SERVER['SCRIPT_NAME'];
+        $base_dir = str_replace(basename($script_name), '', $script_name);
+    ?>
+    <base href="<?php echo $base_dir; ?>">
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"

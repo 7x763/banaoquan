@@ -105,24 +105,28 @@ if (document.getElementById('khohang-list')) {
     });
 }
 
-ClassicEditor
-    .create(document.querySelector('#short_description'))
-    .then(editor => {
-        console.log(editor);
-    })
-    .catch(error => {
-        console.error(error);
-    });
+if (document.querySelector('#short_description')) {
+    ClassicEditor
+        .create(document.querySelector('#short_description'))
+        .then(editor => {
+            console.log(editor);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+}
 
 // Tạo trình soạn thảo cho #product_details
-ClassicEditor
-    .create(document.querySelector('#product_details'))
-    .then(editor => {
-        console.log(editor);
-    })
-    .catch(error => {
-        console.error(error);
-    });
+if (document.querySelector('#product_details')) {
+    ClassicEditor
+        .create(document.querySelector('#product_details'))
+        .then(editor => {
+            console.log(editor);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+}
 </script>
 
 <script>

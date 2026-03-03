@@ -8,6 +8,13 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
+    <!-- T tự động sửa lỗi 404 CSS/JS Admin -->
+    <?php
+        $script_name = $_SERVER['SCRIPT_NAME'];
+        $base_dir = str_replace(basename($script_name), '', $script_name);
+    ?>
+    <base href="<?php echo $base_dir; ?>">
+
     <!-- Favicon -->
     <link href="public_admin/img/favicon.ico" rel="icon">
 
