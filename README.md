@@ -32,9 +32,20 @@ $username = 'root'; // Thay đổi nếu username MySQL của bạn khác
 $password = 'root'; // Thay đổi nếu password MySQL của bạn khác
 ```
 
- Cách Chạy Dự Án
+## 4. Cách Chạy Dự Án (Không cần XAMPP)
 
+Bạn có thể chạy dự án trực tiếp bằng PHP Built-in Server (có sẵn khi cài PHP):
 
+1.  Mở Terminal hoặc Command Prompt tại thư mục của dự án (`DUAN1_QUANAO/DUAN1_QUANAO`).
+2.  Đảm bảo bạn đã cài đặt PHP và đã thêm vào biến môi trường (Environment Variables). Kiểm tra bằng lệnh: `php -v`.
+3.  Chạy lệnh sau để khởi động server:
+    ```bash
+    php -S localhost:8000
+    ```
+4.  Mở trình duyệt web và truy cập theo đường dẫn:
+    `http://localhost:8000`
+
+**Lưu ý:** Bạn vẫn cần một dịch vụ MySQL đang chạy (có thể cài đặt MySQL độc lập hoặc dùng Laragon) để cơ sở dữ liệu hoạt động.
 
 
 
