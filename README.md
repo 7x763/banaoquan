@@ -47,10 +47,7 @@ Lệnh này sẽ chạy server tại cổng 8000. thay đổi số cổng nếu 
 php -S localhost:8000
 ```
 
-**Lệnh nâng cao (Nếu muốn chạy cổng khác):**
-```powershell
-php -S localhost:8080
-```
+
 
 **Bước 3: Truy cập web**
 Sau khi chạy lệnh trên, đừng tắt cửa sổ Terminal. Hãy mở trình duyệt và nhập:
