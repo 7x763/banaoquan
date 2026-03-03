@@ -4,7 +4,7 @@
 *   **MySQL Workbench** (Hoặc phpMyAdmin) để quản lý cơ sở dữ liệu.
 *   Trình duyệt web (Chrome, Edge, Firefox, etc.).
 
-## 2. Hướng Dẫn Import CSDL vào MySQL Workbench
+ Hướng Dẫn Import CSDL vào MySQL Workbench
 
 Để đưa dữ liệu từ file `.sql` vào MySQL, bạn làm theo các bước sau:
 
@@ -22,7 +22,7 @@
     *   Nhấn **Start Import** ở góc dưới bên phải.
     *   Đợi quá trình chạy xong (Status: Import Completed).
 
-## 3. Cấu Hình Kết Nối Cơ Sở Dữ Liệu
+ Cấu Hình Kết Nối Cơ Sở Dữ Liệu
 
 Kiểm tra thông tin kết nối trong file: `config/config.php`
 
@@ -32,14 +32,8 @@ $username = 'root'; // Thay đổi nếu username MySQL của bạn khác
 $password = 'root'; // Thay đổi nếu password MySQL của bạn khác
 ```
 
-## 4. Cách Chạy Dự Án
+ Cách Chạy Dự Án
 
-1.  Copy toàn bộ thư mục `DUAN1_QUANAO` vào thư mục:
-    *   XAMPP: `C:\xampp\htdocs\`
-    *   WAMP: `C:\wamp64\www\`
-2.  Mở bảng điều khiển **XAMPP Control Panel** và **Start** 2 dịch vụ: **Apache** và **MySQL**.
-3.  Mở trình duyệt web và truy cập theo đường dẫn:
-    `http://localhost/DUAN1_QUANAO/DUAN1_QUANAO/`
 
 
 
